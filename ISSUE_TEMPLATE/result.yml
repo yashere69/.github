@@ -1,0 +1,29 @@
+name: Real-world result
+description: You ran it on your own data and want to report what it measured.
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Most of these READMEs were measured on generated data and say so. A result on
+        real data is the most useful thing you can send, including a bad one.
+  - type: input
+    id: version
+    attributes:
+      label: Version and command
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: What the data was
+      description: >
+        Rough size and kind (for example, "a 1,200-product apparel export" or "3 months
+        of a shop's WhatsApp chats"). No real records.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: What it reported, and how that compared with the README
+    validations:
+      required: true
